@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Poetic Gallery</title>
+  <title>IT'S A ME, WAHOO!</title>
   <style>
     body {
       font-family: sans-serif;
@@ -21,11 +21,30 @@
       display: block;
       margin-top: 1rem;
     }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .gallery figure {
+      flex: 1 1 calc(33% - 1rem);
+      margin: 0;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+    }
+    .gallery figcaption {
+      text-align: center;
+      font-size: 0.9em;
+      margin-top: 0.5rem;
+    }
   </style>
 </head>
 <body>
   <h1>Welcome to My Poetic Gallery</h1>
 
+  <!-- Poetic Sections -->
   <section>
     <h2>Ode to Lasagna</h2>
     <p>
@@ -55,5 +74,24 @@
     <img src="ChrisPratt%20Mario.png" alt="Chris Pratt as Mario">
   </section>
 
+  <!-- Gallery Section: All Images -->
+  <section>
+    <h2>Image Gallery</h2>
+    <div class="gallery">
+      <figure>
+        <img src="lasagna.png" alt="Lasagna">
+        <figcaption>Lasagna</figcaption>
+      </figure>
+      <figure>
+        <img src="weegee.png" alt="Weegee">
+        <figcaption>Weegee</figcaption>
+      </figure>
+      <figure>
+        <img src="ChrisPratt%20Mario.png" alt="Chris Pratt as Mario">
+        <figcaption>Chris Pratt Mario</figcaption>
+      </figure>
+    </div>
+  </section>
+  
 </body>
 </html>
